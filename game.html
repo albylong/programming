@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Game Development</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="left-nav">
+        <button class="hamburger" id="menuBtn">☰</button>
+        <a href="index.html" class="logo">Portfolio</a>
+      </div>
+
+      <button id="themeToggle" class="theme-toggle">☾</button>
+    </header>
+
+    <nav id="sidebar">
+      <a href="index.html">Home</a>
+      <a href="web.html">Web Development</a>
+      <a href="game.html">Game Development</a>
+      <a href="bots.html">Bot Development</a>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <h1>Game Dev</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem ipsa harum autem incidunt.
+        </p>
+      </section>
+
+      <section class="video-card">
+        <h2>"Roll A Ball"</h2>
+        <p>
+          For this game I worked through the required tutorial step by step.
+          First adding player field and writing the rules for it then doing the
+          same for the player and it’s rules. Next was the camera which I added
+          and linked to move correctly with the player object. I then worked
+          through setting up the play area by adding walls and obstacles before
+          moving on to collecting items to later be added to a score. To make
+          this all work I had to then add in object collisions and detection for
+          collectibles before finishing up by linking the collectables into the
+          script which updates the score. Also needed to set the game to display
+          “You Win” text when all collectables have been collected. Finally came
+          adding the AI enemy to the game and exporting the game file to finish
+          the tutorial.
+        </p>
+        <video
+          src="media/Roll Ball Game.mov"
+          class="video"
+          loop
+          autoplay
+          width="640"
+          height="360"
+        >
+          Your browser cannot play this video.
+        </video>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
