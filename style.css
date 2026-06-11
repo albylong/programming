@@ -211,9 +211,12 @@ main {
 }
 
 .video {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+  width: 100%; /* Takes up exactly 100% of the card's width */
+  max-width: 100%; /* Ensures it never spills out of the card */
+  aspect-ratio: 16 / 9; /* Maintains a perfect widescreen shape automatically */
+  border-radius: 10px; /* Matches your smooth corners */
+  border: none; /* Removes any default iframe borders */
+  display: block; /* Eliminates any weird gaps at the bottom of the card */
 }
 
 .quote {
