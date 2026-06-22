@@ -130,22 +130,30 @@ main {
 }
 
 .page-links {
-  margin-top: 40px;
+  text-decoration: none;
+  color: var(--text);
+
+  background: var(--border);
+  border: 1px solid var(--accent);
+  border-radius: 16px;
+
+  padding: 15px;
+  padding-inline: 25px;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  margin-top: 15px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  text-align: center;
 }
 
-@media (max-width: 900px) {
-  .page-links {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .page-links {
-    grid-template-columns: 1fr;
-  }
+.page-links:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 30px rgba(244, 194, 215, 0.15);
 }
 
 .nav-card {
